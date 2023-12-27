@@ -7,7 +7,7 @@ app = Flask(__name__)
 CORS(app)
 
 # Set the secret key
-app.config['SECRET_KEY'] = '13cd54f72cc439805f4663e97d4f0f0e'
+app.config['SECRET_KEY'] = 'secret'
 
 def hash_password(password):
     return hashlib.sha256(password.encode()).hexdigest()
